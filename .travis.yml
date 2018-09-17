@@ -1,22 +1,24 @@
+sudo: required
 language: android
+jdk: oraclejdk8
 android:
-components:
-# Uncomment the lines below if you want to
-# use the latest revision of Android SDK Tools
-# Update Android SDK Tools
-    - tools
+  components:
+  # Uncomment the lines below if you want to
+  # use the latest revision of Android SDK Tools
+  # Update Android SDK Tools
+      - tools
 
-    - build-tools-23.0.1
-    - android-23
+      - build-tools-23.0.1
+      - android-23
 
-    # Support library
-    - extra-android-support
-    - extra-android-m2repository
+      # Support library
+      - extra-android-support
+      - extra-android-m2repository
 
-# Specify at least one system image,
-# if you need to run emulator(s) during your tests
-- sys-img-armeabi-v7a-android-22
-- sys-img-armeabi-v7a-android-17
+  # Specify at least one system image,
+  # if you need to run emulator(s) during your tests
+  - sys-img-armeabi-v7a-android-22
+  - sys-img-armeabi-v7a-android-17
 
 
 before_install:
